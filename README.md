@@ -8,14 +8,16 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
-import pandas as pd
+Get the file name and location from the user.
 ### Step 2: 
- Read the csv file using read_csv method
+ Give a new file name to create a copy of a file content.
 ### Step 3: 
-Use head and tail method to get the required contents from the file.
+Read the file and close the file.
 ### Step 4:  
-Use len() method to get the number of rows and columns.
+Now write the content in the new file.
 ### Step 5: 
+When done print "File copied sucessfully"
+### Step 6:
 End of the program.
 
 ## PROGRAM:
