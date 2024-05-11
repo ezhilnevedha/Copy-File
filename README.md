@@ -20,20 +20,24 @@ End of the program.
 
 ## PROGRAM:
 ```
-#developed by:Ezhil Nevedha.K
-#register number:212223230055
-import pandas as pd
-df=pd.read_csv("nba.csv")
-print(df.head(10))
-print(df.tail())
-print("Column",len(df.axes[0]))
-print("Rows",len(df.axes[1]))
+print("Enter the name of source file:")
+sFile=input()
+print("Enter the name of target file:")
+tFile=input()
+fileHandle=open(sFile,"r")
+texts=fileHandle.readlines()
+fileHandle.close()
 
+fileHandle=open(tFile,"w")
+for s in texts:
+    fileHandle.write(s)
+fileHandle.close()
+
+print("\nFile Copied Successfully!")
 
 ```
 ### OUTPUT:
-![alt text](<Screenshot 2024-05-11 214606.png>)
-
+![alt text](<Screenshot 2024-05-11 215401.png>)
 
 ## RESULT:
 Thus the program is written to copy the contents from one file to another file.
